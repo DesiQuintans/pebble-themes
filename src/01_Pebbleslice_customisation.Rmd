@@ -1,0 +1,153 @@
+---
+title: "Test file for 'pebbleslice' RStudio theme"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+
+
+
+
+
+
+# This is the 'pebbleslice' theme
+
+Lorem ipsum **dolor sit amet**, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris _nisi ut aliquip_ ex ea commodo consequat. 
+
+Duis aute irure dolor in reprehenderit in `voluptate velit esse` cillum dolore eu 
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+qui officia deserunt mollit anim id est laborum. 
+
+```{r folded_block}
+
+```
+
+
+```{r blockname, echo=TRUE, eval=FALSE}
+#' Mirror the rows/cols of a matrix
+#'
+#' @param mat (Matrix) A matrix.
+#' @param MARGIN (Integer) `1` to reverse order of cols, `2` to reverse rows.
+#'
+#' @return A mirrored matrix.
+#' @export
+#'
+#' @md
+mirror_matrix <- function(mat, MARGIN = 2) {
+    # Here's an inline comment.
+    new_order <- dim(mat)[MARGIN]:1
+
+    if (MARGIN == 1) {
+        mat[new_order, ]
+    } else if (MARGIN == 2) {
+        mat[, new_order]
+    } else {
+        stop("Argument 'MARGIN' must be set to either '1' (rows) or '2' (cols).")
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Resources for theme creation
+
+- <https://support.rstudio.com/hc/en-us/articles/115011846747-Using-RStudio-Themes>
+- <https://rstudio.github.io/rstudio-extensions/rstudio-theme-creation.html>
+
+
+
+# 1. Covert the tmTheme into an RStudio theme
+
+<https://tmtheme-editor.herokuapp.com>
+
+```{r}
+rstudioapi::convertTheme("pebbleslice.tmTheme")
+```
+
+
+# 2. Edit the theme CSS by hand
+
+Not much functionality is exposed via the editor theme scopes. These features need to be added by hand.
+
+These edits are made in `Mrmrs RStudio theme.rstheme`.
+
+## 2a. Fix headings
+
+This makes the text formatting extend for the entire heading, not just the intitial `#`. It also adds some padding so that text is fully enclosed in its background.
+
+Increasing the font size of headings does work, but the cursor of the editor is unaware of the new visual size of the characters. This means that if you go to the end of the heading line, the cursor visually will be in the middle of the last word (but editing still works as expected).
+
+I have added a tiny amount of transparency to the background colour so that the text highlighting colour is at least a little bit visible through it. A limitation 
+
+``` css
+.ace_markup.ace_heading {
+  color: #111111;
+  padding: 1px 0px 1px 0px;
+  background-color: #FFFFFFE6;
+
+}
+
+.ace_heading {
+  color: #111111;
+  padding: 1px 5px 1px 0px;
+  background-color: #FFFFFFE6;
+
+}
+```
+
+## 2b. Change cursor colour
+
+More noticeable magenta colour.
+
+``` css
+.ace_cursor {
+  color: #FD5FF0;
+}
+```
+
+## 2c. Fix selection box
+
+The box has more padding around it and is a darker magenta than the cursor. The magenta makes search results easier to spot.
+
+``` css
+.ace_marker-layer .ace_selection {
+  padding: 1px 0px 1px 2px;
+  background: #F012BEBF;
+}
+
+.ace_marker-layer .ace_selected-word {
+  padding: 1px 0px 1px 2px;
+  border: 2px solid #F012BEBF
+}
+```
+
+## 2d. Matching bracket indicator
+
+Make it magenta to match the cursor.
+
+``` css
+.ace_bracket {
+  margin: 0 !important;
+  border: 0 !important;
+  background-color: #FD5FF0;
+}
+```
