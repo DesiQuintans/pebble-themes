@@ -19,7 +19,7 @@ Some key changes from Merbivore are:
 
 1. You need to be running RStudio v 1.2.x. At the time of writing (2019-02-19) this is only available as a Preview, and you can download the newest Preview here <https://www.rstudio.com/products/rstudio/download/preview/>.
 
-2. Download `pebbleslice.rstheme`.
+2. Download [the newest release of Pebbleslice](https://github.com/DesiQuintans/pebbleslice-theme/releases).
 
 3. In RStudio 1.2.x, go to _Tools_ → _Global Options_ → _Appearance_.
 
