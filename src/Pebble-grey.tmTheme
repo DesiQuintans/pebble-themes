@@ -7,24 +7,24 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Clrs.cc Palette</string>
+	<string>Pebble-grey</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#272822</string>
+				<string>#252525ff</string>
 				<key>caret</key>
 				<string>#FD5FF0</string>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>#E3E3E3</string>
 				<key>invisibles</key>
-				<string>#3B3A32</string>
+				<string>#363636ff</string>
 				<key>lineHighlight</key>
-				<string>#3E3D32</string>
+				<string>#383838ff</string>
 				<key>selection</key>
-				<string>#F012BE</string>
+				<string>#F012BEBF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -42,13 +42,11 @@
 			<key>name</key>
 			<string>Markup heading</string>
 			<key>scope</key>
-			<string>markup.heading</string>
+			<string>markup.heading, .ace_markup.ace_heading, .ace_heading</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#111</string>
-				<key>background</key>
-				<string>#F8F8F2</string>
+				<string>#FD971F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -59,7 +57,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#2ECC40</string>
+				<string>#ffffffff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -70,7 +68,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFDC00</string>
+				<string>#ffffffff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -81,7 +79,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFDC00</string>
+				<string>#ffffffff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -94,7 +92,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#FD971F</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -105,7 +103,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FD971F</string>
+				<string>#ffffffff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -118,7 +116,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#01FF70</string>
+				<string>#ffffffff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -129,7 +127,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FD971F</string>
+				<string>#ffffffff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -140,7 +138,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>#ffffffff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -160,7 +158,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFEFB5</string>
+				<string>#ffffffff</string>
 			</dict>
 		</dict>
 	</array>
@@ -169,10 +167,10 @@
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>semanticClass</key>
-	<string>theme.dark.pebbleslice</string>
+	<string>theme.dark.pebblegrey</string>
 	<key>author</key>
 	<string>Desi Quintans</string>
 	<key>comment</key>
-	<string>Uses colours from https:&#x2f;&#x2f;clrs.cc.</string>
+	<string>Greyscale, minimal colours.</string>
 </dict>
 </plist>

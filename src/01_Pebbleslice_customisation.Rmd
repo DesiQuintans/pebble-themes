@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-# This is the 'pebbleslice' theme
+# This is a 'Pebble' theme
 
 Lorem ipsum **dolor sit amet**, consectetur adipiscing elit, sed do eiusmod tempor 
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -80,7 +80,7 @@ mirror_matrix <- function(mat, MARGIN = 2) {
 <https://tmtheme-editor.herokuapp.com>
 
 ```{r}
-rstudioapi::convertTheme("pebbleslice.tmTheme")
+rstudioapi::convertTheme("Pebble-dark.tmTheme")
 ```
 
 
@@ -88,7 +88,7 @@ rstudioapi::convertTheme("pebbleslice.tmTheme")
 
 Not much functionality is exposed via the editor theme scopes. These features need to be added by hand.
 
-These edits are made in `Mrmrs RStudio theme.rstheme`.
+These edits are made in `Pebble-dark.rstheme`.
 
 ## 2a. Fix headings
 

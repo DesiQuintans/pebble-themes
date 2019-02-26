@@ -1,15 +1,29 @@
-# 'pebbleslice' RStudio 1.2.x theme
+# 'Pebble' RStudio 1.2.x themes
 
-![](images/pebbleslice.png)
-
-_Pebbleslice_ is a dark theme for RStudio, based on Merbivore and extended with colours from Adam Morse's <https://clrs.cc>. The font in the screenshot above is Hack in 10 pt <https://sourcefoundry.org/hack/>.
+_Pebble_ is a line of the themes I've made for RStudio. The font in the screenshots below is Hack in 10 pt <https://sourcefoundry.org/hack/>.
 
 
-Some key changes from Merbivore are:
+## Pebble-safe
 
-1. More prominent Markdown headings so it's easier to scan for them.
-2. More noticeable text cursor (caret), search result highlighting, and text rectangle highlighting.
-3. Comments are more noticeable (because you're only leaving important ones).
+A light theme with colourblind-friendly colours from the RColorBrewer package.
+
+![](images/pebble-safe.png)
+
+
+
+## Pebble-dark
+
+A dark theme based on Merbivore and extended with colours from Adam Morse's <https://clrs.cc>.
+
+![](images/pebble-dark.png)
+
+
+
+## Pebble-grey
+
+A dark monochrome theme with bright comments.
+
+![](images/pebble-grey.png)
 
 
 ---
@@ -19,11 +33,11 @@ Some key changes from Merbivore are:
 
 1. You need to be running RStudio v 1.2.x. At the time of writing (2019-02-19) this is only available as a Preview, and you can download the newest Preview here <https://www.rstudio.com/products/rstudio/download/preview/>.
 
-2. Download [the newest release of Pebbleslice](https://github.com/DesiQuintans/pebbleslice-theme/releases).
+2. Download one of the `.rstheme` files in the root of this repo.
 
 3. In RStudio 1.2.x, go to _Tools_ → _Global Options_ → _Appearance_.
 
-4. Click the _Add_ button underneath the list, choose your downloaded `pebbleslice.rstheme`, and click _Open_.
+4. Click the _Add_ button underneath the list, choose your downloaded `.rstheme`, and click _Open_.
 
 5. Click _Apply_ to apply the theme.
 
