@@ -124,6 +124,11 @@
 
 }
 
+.ace_heading {
+  color: #E31A1C;
+
+}
+
 .ace_marker-layer .ace_active_debug_line {
   background-color: #B3B3B3;
 
