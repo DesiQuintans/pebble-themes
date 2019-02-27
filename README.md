@@ -9,11 +9,11 @@ A light theme with colourblind-friendly colours from the RColorBrewer package. T
 
 ![](images/pebble-safe.png)
 
-![](images/pebble-deuteranopia.png)
+![](images/pebble-safe-deuteranopia.png)
 
-![](images/pebble-protanopia.png)
+![](images/pebble-safe-protanopia.png)
 
-![](images/pebble-tritanopia.png)
+![](images/pebble-safe-tritanopia.png)
 
 
 
